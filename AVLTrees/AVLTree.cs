@@ -149,7 +149,7 @@ namespace AVLTrees
         public bool IsBalanced()
         {
             if (root == null) return true;
-            return CalculateBalanceFactor(root.Left, root.Right) != 2;
+            return Math.Abs(CalculateBalanceFactor(root.Left, root.Right)) != 2;
         }
     }
 }
